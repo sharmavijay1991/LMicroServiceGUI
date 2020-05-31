@@ -1,0 +1,22 @@
+<H1>Log-Reader</H1>
+
+<table style="width:100%" border="1">
+  <tr>
+    <th>Log-ID</th>
+    <th>Device-ID</th>
+    <th>Log-Time</th>
+    <th>Process-ID</th>
+    <th>Process-Time</th>
+    <th>Process-Name</th>
+    <th>Log-Line</th>
+  </tr>
+  <tr *ngFor="let data of listlogs">
+      <td>{{data.id}}</td>
+      <td>{{data.deviceid}}</td>
+      <td>{{data.logtime}}</td>
+      <td>{{data.processid}}</td>
+      <td>{{data.processtime}}</td>
+      <td>{{data.processname}}</td>
+      <td>{{data.logline}}</td>
+  </tr>
+</table>
